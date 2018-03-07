@@ -1,21 +1,20 @@
 # Exploring-MNIST
 
-# REFERENCE AND SOURCE CODE: The Ultimate Beginner Guide to Deep Learning in Python: https://elitedatascience.com/keras-tutorial-deep-learning-in-python 
+* REFERENCE AND SOURCE CODE: The Ultimate Beginner Guide to Deep Learning in Python: https://elitedatascience.com/keras-tutorial-deep-learning-in-python 
 
-Task: Design the following models with the mentioned specifications and record the observations
-Framework : Keras
-Backend : Tensorflow
-Dataset : MNIST
+* Task: Design the following models with the mentioned specifications and record the observations
+* Framework : Keras
+* Backend : Tensorflow
+* Dataset : MNIST
 
 
-# Model 1
+# Model 1 a) 
+* Input: 28x28 sized images
+* Output: 0 – 9 labels
+* Input Layer → Fully Connected Layer→ Output Layer
 
-Input: 28x28 sized images
-Output: 0 – 9 labels
-Model specs:
-# a) Input Layer → Fully Connected Layer→ Output Layer
+* Result:
 
-Result:
 60000/60000 [==============================] - 8s 138us/step - loss: 0.3942 - acc: 0.8840
 Epoch 2/10
 60000/60000 [==============================] - 8s 136us/step - loss: 0.2230 - acc: 0.9344
@@ -37,9 +36,11 @@ Epoch 10/10
 60000/60000 [==============================] - 8s 137us/step - loss: 0.1147 - acc: 0.9635
 
 
-# b) Input layer → Conv layer1 → Conv layer2 → FC layer → Output layer
+# Model 1 b) 
 
-Result:
+* Input layer → Conv layer1 → Conv layer2 → FC layer → Output layer
+* Result:
+
 Epoch 1/10 
 60000/60000 [==============================] - 54s 896us/step - loss: 0.2475 - acc: 0.9242
 Epoch 2/10
@@ -63,12 +64,13 @@ Epoch 10/10
 
 
 # Model 2
-Input: 28x28
-Ouput: 0, even label(1), odd label(2)
-Model specs:
-# Input layer → Conv layer1 → Conv layer2 → FC layer → Output layer	
 
-Result:
+* Input: 28x28
+* Ouput: 0, even label(1), odd label(2)
+* Input layer → Conv layer1 → Conv layer2 → FC layer → Output layer	
+* Result:
+
+Epoch 1/10 
 60000/60000 [==============================] - 54s 895us/step - loss: 0.1346 - acc: 0.9524
 Epoch 2/10
 60000/60000 [==============================] - 54s 894us/step - loss: 0.0578 - acc: 0.9810
