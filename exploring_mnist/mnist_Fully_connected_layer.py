@@ -62,5 +62,5 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 # Fit model on training data
 model.fit(X_train, Y_train, batch_size=32, nb_epoch=10, verbose=1)
 
-# 10. Evaluate model on test data
+# Evaluate model on test data
 score = model.evaluate(X_test, Y_test, verbose=0)
